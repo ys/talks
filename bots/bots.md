@@ -1,8 +1,6 @@
 # All those bots are gonna steal your job
 
-See it as a journey
-
-## Chatops (N.F.)
+## Chatops (N.F.) (5 minutes)
 
 - Comes from GitHub
 - Conversation driven development
@@ -47,7 +45,7 @@ See it as a journey
 - Act on behalf of users not as a bot!
 - Use a bot for funny/less important stuff and build real open source apps for the rest.
 
-## Before
+## Before (8 minutes)
 
 - Sentinel custom ruby bot homemade for PagerDuty
 - We decide to bring that old codebase to the future, it was a mess and not really maintainable anymore
@@ -56,7 +54,7 @@ See it as a journey
     - We will be able to bring the best of the scripts to herokai
 - We were looking at the solutions that were available
 - We prototyped something in Golang but dropped it to not redo the error of a custom codebase.
-- We were a team of 2 working on all our projects. 
+- We were a team of 2 working on all our projects.
 - Custom building meant we had to maintain yet another full codebase
 - We also had a few other internal bots that were running on Hubot, so we thought it would be a good shot at them and replace with a single one, Maintain that more easily and get other teams to contribute.
 - So what we did is rewrite all our pager duty scripts for Hubot as we have a total ownership model, the default PD script only works for an Ops team. Step one in getting custom code in.
@@ -65,8 +63,8 @@ See it as a journey
 
 - We ended up rewriting all our scripts and not leveraging the community
 - We have bad practices in testing coffee script and async code.
-- Having one codebase meant we were responsible for reviewing all the people code too. And teams were not aware of which team was maintaining so > Increasing maintenance and communication cost. 
-- We did not have an internal REDIS provider so we picked a Postgres Brain > Giant text blob in one column… I mean Redis is the same for the brain… That json blob is just an issue. 
+- Having one codebase meant we were responsible for reviewing all the people code too. And teams were not aware of which team was maintaining so > Increasing maintenance and communication cost.
+- We did not have an internal REDIS provider so we picked a Postgres Brain > Giant text blob in one column… I mean Redis is the same for the brain… That json blob is just an issue.
 - No great Postgres drivers in Node or we had issues using it.
 - No rollbar easy integration
 - A lot of custom code for instrumentation and monitoring
@@ -87,7 +85,7 @@ See it as a journey
 - Data modeling with just a JSON blob made it tricky to have nice Structured data like we do with any relational database.
 - Single process. Means we cannot scale easily and need to proxy or rely on callback hell we fighter
 
-## Now?
+## Now? (8 minutes)
 
 - We migrated to slack definitively.
 - We had time to bring core feature to different rails slack apps.
@@ -139,10 +137,10 @@ See it as a journey
 - Bots Checking CVE on PR
 - Checking internal gems versions
 
-## Where are we going?
+## Where are we going? (5 minutes)
 - More integrations for incident handling
-- Better PagerDuty integration and bringing context to pages from other apps. 
-- buttons directly in chat. 
+- Better PagerDuty integration and bringing context to pages from other apps.
+- buttons directly in chat.
 - Having a 100% accurate view of heroku platform from chat
 - Onboarding through chat a la 18f ??
 - Security via 2fa on your phone thanks to SalesforceAuth or duo
